@@ -1,0 +1,40 @@
+#places .container {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center:;
+}
+
+#places .img-box {
+	width: 30%;
+}
+
+#places .img-box a {
+	display: block;
+	width:100%;
+	overflow: hidden;
+}
+
+#places .img-box img {
+	display: block;
+	width:auto;
+	max-width:100%;
+	max-height: 60vh;
+	margin:auto;
+	transition: transform .5s ease;	
+}
+
+#places .img-box a:hover img {
+	transform: scale(1.1);
+}
+
+#places .img-box h4 {
+	margin: auto;
+	text-align:center;
+	font-size:;
+	line-height: ;
+	letter-spacing: ;
+	text-transform: ;
+	color:;
+}

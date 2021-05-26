@@ -1,0 +1,31 @@
+#contact {
+	min-height: 0;
+	border-top: 1px solid rgba(57, 36, 11, 1);
+	padding-bottom: 40px;
+}
+
+#contact .container {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center:;
+}
+
+#contact p {
+    margin-bottom: .25em;
+    max-width: 400px;
+    text-align:center;
+}
+
+#contact .img-box {
+	display: block;
+	width:100%;
+}
+
+#contact .img-box img {
+	display: block;
+	width:36px;
+	margin:auto;
+	margin-top: 15px;
+}

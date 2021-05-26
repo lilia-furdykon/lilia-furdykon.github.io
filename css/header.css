@@ -1,0 +1,132 @@
+header {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding:0;
+    width:100%;
+    margin: auto;
+    height: 100vh;
+}
+
+.b1, .b2 {
+    width:50%;
+    height:100%;
+}
+
+.b1 {
+    background-color: rgba(243, 228, 219, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.b1 .img-box {
+    width: 20vh;
+    height:20vh;
+    min-width: 100px;
+    min-height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: auto;
+}
+.b1 .img-box img {
+    display: block;
+    width:100%;
+}
+
+.b2 {
+    background-image: url("../img/door2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header h1 {
+    margin-bottom: .25em;
+    max-width: 200px;
+}
+
+.arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    margin-left:-16px;
+    display: block;
+    width: 32px;
+    height: 28px;
+}
+
+.arrow-down span {
+    /*background-color:rgba(57, 36, 11, 1);*/
+    /*display: block;*/
+    width: 1px;
+    height:100%;
+    margin: auto;
+    transform: translateX(-80%);
+}
+
+.arrow-down span::before,
+.arrow-down span::after {
+    background-color: rgba(57, 36, 11, 1);
+    position: absolute;
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
+    display: block;
+    content:"";
+    width: 1px;
+    height:15px;
+    transform-origin: 50% bottom;
+}
+
+.arrow-down span::before {
+    transform: rotate(-45deg) translateX(-50%);
+}
+
+.arrow-down span::after {
+    transform: rotate(45deg) translateX(-50%);
+}
+
+.arrow-down:hover {
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+
+  0%   { transform: translateY(0) scale(1); }
+  100% { transform: translateY(30%) scale(1.2); }
+}
+
+@media screen and (max-aspect-ratio:1/1) {
+
+    .b1, .b2 {
+        width:100%;
+        height:50%;
+    }
+
+    .b1 .img-box {
+        max-width: 120px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        max-width: 100%;
+    }
+
+    header h3 {
+        padding-top: .15em;
+    }
+
+    .arrow-down {
+        bottom: 15px;
+    }
+}

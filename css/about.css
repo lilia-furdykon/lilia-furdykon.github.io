@@ -1,0 +1,37 @@
+#about .container {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center:;
+}
+
+#about h1 {
+    margin-bottom: .25em;
+    max-width: 200px;
+    text-align:center;
+}
+
+#about .img-box {
+	display: block;
+	width:100%;
+}
+
+#about .img-box img {
+	display: block;
+	width:auto;
+	max-width:100%;
+	max-height: 60vh;
+	margin:auto;	
+}
+
+#about h3 {
+	margin: auto;
+	margin-top: 15px;
+	text-align:center;
+	font-size:;
+	line-height: ;
+	letter-spacing: ;
+	text-transform: ;
+	color:;
+}
